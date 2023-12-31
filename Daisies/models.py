@@ -5,7 +5,7 @@ from django.contrib.auth.models import User # Import Django's User model
 # Model for Band Members
 class BandMember(models.Model):
     """
-    Model representing a band member.
+    Model representing a band members.
     """
     name = models.CharField(max_length=100)
     role_band = models.CharField(max_length=100)
@@ -14,7 +14,7 @@ class BandMember(models.Model):
 
     def __str__(self):
         """
-        String representation of the band member.
+        String representation of the band members.
         """
         return self.name
     
