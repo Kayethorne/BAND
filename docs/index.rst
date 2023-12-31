@@ -10,6 +10,10 @@ Welcome to BAND's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   band_members
+   albums
+   songs
+
 
 
 Indices and tables
