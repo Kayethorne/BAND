@@ -7,16 +7,25 @@ from django.contrib.auth.decorators import login_required
 
 # listing band members
 def band_members(request):
+    """
+    View function for displaying band members.
+    """
     band_members = BandMember.objects.all()
     return render(request, 'daisies/band_members.html', {'band_members': band_members})
 
 # listing albums
 def albums(request):
+    """
+    View function for displaying albums.
+    """
     albums = Album.objects.all()
     return render(request, 'daisies/albums.html', {'albums': albums})
 
 # listing songs
 def songs(request):
+    """
+    View function for displaying songs.
+    """
     songs = Song.objects.all()
     return render(request, 'daisies/songs.html', {'songs': songs})
 
