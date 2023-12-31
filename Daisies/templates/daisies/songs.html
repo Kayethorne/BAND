@@ -1,0 +1,28 @@
+{% extends 'daisies/base.html' %}
+{% load static %}
+
+
+{% block title %}Songs - Daisies{% endblock %}
+
+{% block content %}
+    <section class="songs">
+            <h2>Songs</h2>
+            <p>The Daisies - Songs:</p>
+            <ul>
+                {% for song in songs %}
+                    <li>
+                        <h3>{{ song.title }}</h3>
+                        <p>Length: {{ song.length }}</p>
+                        <p>Album: {{song.album.title}}</p>
+                        <img src="{% static 'images/album cover.jpeg' %}" alt="album cover" class="album-cover">
+                    </li>
+                {% endfor %}
+            </ul>
+    </section>
+{% endblock %}
+
+
+
+
+
+

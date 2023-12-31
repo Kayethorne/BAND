@@ -1,0 +1,89 @@
+/* styles.css */
+
+
+section.home {
+    background-color: #d2adad;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #d8a8a8;
+    text-align: center;
+    padding: 10px
+}
+
+.band_members {
+    margin: 20px;
+    padding: 20px;
+    background-color: #e8cdcd;
+    color: #000000;
+    text-decoration: solid;
+    text-align: center;
+}
+
+.band_members ul {
+    list-style: none;
+    padding: 0;
+}
+
+.band_members li {
+    margin-bottom: 20px;
+}
+
+
+.member-image {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.member-image:hover {
+    transform: scale(1.2);
+}
+
+.albums {
+    margin: 20px;
+    padding: 20px;
+    background-color: #e8cdcd;
+}
+
+.albums ul {
+    list-style: circle;
+    padding: 0;
+}
+
+.albums li {
+    margin-bottom: 20px;
+}
+
+.album-cover {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.album-cover:hover {
+    transform: scale(1.2);
+}
+
+.songs {
+    margin: 20px;
+    padding: 20px;
+    background-color: #e8cdcd;
+}
+
+.songs ul {
+    list-style: circle;
+    padding: 0;
+}
+
+.songs li {
+    margin-bottom: 20px;
+}

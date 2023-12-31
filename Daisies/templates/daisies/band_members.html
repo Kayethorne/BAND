@@ -1,0 +1,24 @@
+{% extends 'daisies/base.html' %}
+{% load static %}
+
+
+{% block title %}Band Members - Daisies{% endblock %}
+        
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Daisies/styles.css' %}">
+
+    <section class="band_members">
+        <h2>Band Members</h2>
+        <p> The Daisies - Members
+        <ul>
+            {% for member in band_members %}
+                <li>
+                    <h3>{{ member.name }}</h3>
+                    <p>{{ member.role_band }}</p>
+                    <p>{{ member.bio }}</p>
+                    <img src="{% static 'images/Rose.png' %}" alt="Rose" class="member-image">
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}
